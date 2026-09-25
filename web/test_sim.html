@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Celestial Sim - Direct 3D Test</title>
+  <style>
+    body { margin: 0; padding: 0; background: #050811; overflow: hidden; }
+    #celestial-sim-container { width: 100vw; height: 100vh; }
+    #hud {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 13px;
+      background: rgba(10, 15, 25, 0.85);
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/celestial_sim_engine.js"></script>
+</head>
+<body>
+  <div id="celestial-sim-container"></div>
+  <div id="hud">Direct 3D Engine Test • Loading...</div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('celestial-sim-container');
+      window.CelestialSim.init(container);
+      window.CelestialSim.onTelemetryUpdate((t) => {
+        document.getElementById('hud').innerHTML = 
+          `<b>Sun:</b> Az ${t.sunAzimuth.toFixed(1)}° | Alt ${t.sunAltitude.toFixed(1)}° | Dist: ${(t.sunDistanceKm/1e6).toFixed(1)}M km<br>` +
+          `<b>Moon:</b> ${t.moonPhaseName} (${(t.moonPhaseFraction*100).toFixed(0)}%)<br>` +
+          `<b>Horizon Dip:</b> -${t.horizonDipDeg.toFixed(2)}°`;
+      });
+    });
+  </script>
+</body>
+</html>

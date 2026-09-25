@@ -1,16 +1,25 @@
 # 🌍 Celestial Observer: Globe vs. Flat Earth Simulation
 
+> ### 🚀 **[Click Here to Launch the Live Simulation](https://aopen41.github.io/FlatEarthSim/)**
+> *Runs instantly in any modern web browser on PC, Mac, iPhone, iPad, or Android with zero installation required!*
+
+---
+
 Welcome to **Celestial Observer**! This is an interactive 3D virtual physics and astronomy laboratory designed to explore, test, and compare the **Globe Model** and the **Flat Earth Model** side by side using real mathematics, 3D graphics, and optics.
 
 Whether you want to test over-the-horizon water curvature, examine how sunsets work under different models, watch seasonal sun tracks, or inspect the celestial sphere through a virtual telescope, this tool gives you complete freedom to experiment with every variable.
 
 ---
 
-## ⚡ Quick Start (Easiest Way — No Tech Experience Needed)
+## ⚡ Quick Start
 
-If you have downloaded this folder on a Windows computer, you do **not** need to be a programmer or know how to code to run it!
+### 🌐 Option 1: Play Immediately Online (No Download Needed)
+Just click the live link: **[https://aopen41.github.io/FlatEarthSim/](https://aopen41.github.io/FlatEarthSim/)**
 
-### The 1-Click Launch:
+---
+
+### 💻 Option 2: Run Locally on Windows (1-Click Launch)
+If you have downloaded this folder on a Windows computer, you do **not** need to be a programmer or know how to code to run it:
 1. Open this project folder in your Windows File Explorer.
 2. Find the file named **`run_simulation.bat`** and **double-click it**.
 3. A small window will appear, and your default web browser (Chrome, Edge, Firefox, etc.) will **automatically open** to the simulation!
